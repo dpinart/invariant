@@ -47,5 +47,6 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
     throw error;
   }
 };
-
-module.exports = invariant;
+if(module)
+  module.exports = invariant;
+export default invariant;
